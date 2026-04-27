@@ -1,0 +1,364 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - My Project{% endblock %}
+
+{% block content %}
+
+
+
+<section class="relative text-white overflow-hidden">
+
+    <!-- BACKGROUND IMAGE (Fixed) -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
+        style="background-image: url('https://t3.ftcdn.net/jpg/01/81/32/56/360_F_181325642_Qq74bLPAmClMUqjh70ABsqc9xrOxX6Xn.jpg');">
+    </div>
+
+    <!-- DARK + GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+
+
+    <!-- CONTENT -->
+    <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- TEXT -->
+        <div data-aos="fade-up">
+
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 uppercase">
+                JS Traders <br>
+                <span class="bg-gradient-to-r from-green-soft to-blue-soft bg-clip-text text-transparent">
+                    Smart Cash Trading Solutions
+                </span>
+            </h1>
+
+            <p class="text-gray-200 text-sm md:text-lg mb-6 max-w-lg">
+                Reliable, fast, and secure trading services designed for modern investors.
+                Build wealth with precision and confidence.
+            </p>
+
+            <!-- CTA -->
+            <div class="flex flex-wrap gap-4">
+                <a href="/contact/"
+                    class="bg-green-light hover:bg-green-soft px-6 py-3 rounded-full font-semibold shadow-lg transition">
+                    Get Started
+                </a>
+
+                <a href="/products/"
+                    class="border border-white/40 hover:bg-white/10 px-6 py-3 rounded-full font-semibold transition">
+                    View Services
+                </a>
+            </div>
+
+            <!-- STATS -->
+            <div class="flex gap-6 mt-8 text-sm">
+                <div>
+                    <h3 class="text-xl font-bold">5K+</h3>
+                    <p class="text-gray-300">Clients</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">₹10Cr+</h3>
+                    <p class="text-gray-300">Volume Traded</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">99%</h3>
+                    <p class="text-gray-300">Success Rate</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT IMAGE -->
+        <div class="relative" data-aos="fade-right">
+
+            <!-- Glow background -->
+            <div class="absolute -top-6 -left-6 w-full h-full bg-gradient-mix rounded-3xl opacity-20 blur-2xl"></div>
+
+            <!-- Main Image -->
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZN/MX/BA/43643152/coconut-500x500.png"
+                alt="JS Traders" class="relative rounded-3xl shadow-2xl w-full object-cover">
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+        <div data-aos="fade-left">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-blue mb-4 uppercase">
+                About JS Traders
+            </h2>
+
+            <p class="text-gray-600 mb-4 leading-relaxed text-justify">
+                JS Traders is a trusted name in cash trading, delivering smart and secure financial solutions
+                tailored for modern investors. Our approach combines deep market expertise with advanced strategies
+                to ensure consistent growth and stability.
+            </p>
+
+            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                We believe in transparency, speed, and precision. Whether you're a beginner or a seasoned investor,
+                our goal is to help you make confident trading decisions backed by data and experience.
+            </p>
+
+            <!-- ICON FEATURES -->
+            <div class="grid grid-cols-2 gap-4">
+
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gradient-green text-white p-3 rounded-lg">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Market Expertise</h4>
+                        <p class="text-sm text-gray-500">Data-driven insights</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gradient-blue text-white p-3 rounded-lg">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Secure Trading</h4>
+                        <p class="text-sm text-gray-500">Safe & reliable system</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gradient-green text-white p-3 rounded-lg">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Fast Execution</h4>
+                        <p class="text-sm text-gray-500">Real-time performance</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <div class="bg-gradient-blue text-white p-3 rounded-lg">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Expert Team</h4>
+                        <p class="text-sm text-gray-500">Professional support</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16">
+                <a href="/contact/"
+                    class="bg-gradient-mix text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+                    Get in Touch
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-10">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue mb-2 uppercase">
+                    Our Products
+                </h2>
+                <p class="text-gray-500 text-sm">
+                    Explore our range of trading products
+                </p>
+            </div>
+        </div>
+
+        <!-- SCROLL CONTAINER -->
+        <div class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4">
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+
+                <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bowl-dark-background_1150-45357.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+
+                <h3 class="font-semibold text-lg text-center">Equity Trading</h3>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="https://t3.ftcdn.net/jpg/01/71/97/94/360_F_171979497_W6Ke2ZCBjOPNPkOuGsgktqSLhzYsQDSn.jpg"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+                <h3 class="font-semibold text-lg text-center">Commodity Trading</h3>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZN/MX/BA/43643152/coconut-500x500.png"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+                <h3 class="font-semibold text-lg text-center">Forex Trading</h3>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bag-dark-background_1150-45358.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+                <h3 class="font-semibold text-lg text-center">Derivatives</h3>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBypHAEgpEwBr4Wym9LYtSv7Vc8IygJvTjOg&s"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+                <h3 class="font-semibold text-lg text-center">Portfolio Management</h3>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/03/31192046/shutterstock_1268044990-1.jpg"
+                    class="rounded-xl mb-4 w-full h-40 object-cover">
+                <h3 class="font-semibold text-lg text-center">Intraday Trading</h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="relative py-20 text-white overflow-hidden">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
+        style="background-image: url('https://img.freepik.com/free-photo/raw-cashews-nuts-bowl-dark-background_1150-45357.jpg?semt=ais_hybrid&w=740&q=80');">
+    </div>
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <!-- GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue/60 via-transparent to-green/60"></div>
+
+    <!-- CONTENT -->
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <!-- HEADER -->
+        <div class="text-center mb-14" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 uppercase">
+                Why Choose JS Traders
+            </h2>
+            <p class="text-gray-200 max-w-2xl mx-auto">
+                We combine expertise, technology, and precision strategies to deliver consistent and secure trading
+                performance.
+            </p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="100">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-green text-white mb-4">
+                    <i class="fas fa-chart-line text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Smart Trading Strategy</h3>
+                <p class="text-gray-200 text-sm">
+                    Data-driven trading strategies that maximize returns while minimizing risks.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="200">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-blue text-white mb-4">
+                    <i class="fas fa-shield-alt text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Secure Transactions</h3>
+                <p class="text-gray-200 text-sm">
+                    Advanced security protocols ensure your investments are always protected.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="300">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-green text-white mb-4">
+                    <i class="fas fa-bolt text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Fast Execution</h3>
+                <p class="text-gray-200 text-sm">
+                    Lightning-fast trade execution to capture market opportunities instantly.
+                </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="400">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-blue text-white mb-4">
+                    <i class="fas fa-users text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">Expert Team</h3>
+                <p class="text-gray-200 text-sm">
+                    Experienced professionals guiding your investments with precision.
+                </p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="500">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-green text-white mb-4">
+                    <i class="fas fa-coins text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">High Returns</h3>
+                <p class="text-gray-200 text-sm">
+                    Optimized strategies focused on consistent profit generation.
+                </p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="group bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:shadow-xl transition duration-300"
+                data-aos="fade-up" data-aos-delay="600">
+
+                <div class="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-blue text-white mb-4">
+                    <i class="fas fa-headset text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-semibold mb-2">24/7 Support</h3>
+                <p class="text-gray-200 text-sm">
+                    Dedicated support team always available for assistance and guidance.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+{% endblock %}

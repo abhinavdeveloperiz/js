@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Products - JS Traders{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="relative text-white flex items-center justify-center 
+                h-[35vh] md:h-[50vh] overflow-hidden">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
+        style="background-image: url('https://t3.ftcdn.net/jpg/09/15/41/58/360_F_915415879_q4SfbiqFrosg6BeijMNDnyKgYxVpuXC8.jpg');">
+    </div>
+
+    <!-- DARK OVERLAY -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue/60 via-transparent to-green/60"></div>
+
+    <div class="relative text-center px-6">
+        <h1 class="text-2xl md:text-5xl font-bold mb-3 uppercase">
+            Our Products
+        </h1>
+        <a href="/" class="text-gray-200 text-sm md:text-base max-w-xl mx-auto hover:underline transition">
+            Home / <span class="text-green-light font-semibold">Products</span>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS GRID ================= -->
+<section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+
+                <div class="overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bowl-dark-background_1150-45357.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Equity Trading</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="https://t3.ftcdn.net/jpg/01/71/97/94/360_F_171979497_W6Ke2ZCBjOPNPkOuGsgktqSLhzYsQDSn.jpg"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Commodity Trading</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZN/MX/BA/43643152/coconut-500x500.png"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Forex Trading</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bag-dark-background_1150-45358.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Derivatives</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBypHAEgpEwBr4Wym9LYtSv7Vc8IygJvTjOg&s"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Portfolio Management</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD -->
+            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
+                <div class="overflow-hidden">
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/03/31192046/shutterstock_1268044990-1.jpg"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-lg font-semibold mb-3">Intraday Trading</h3>
+                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
+                        Enquire Now →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="bg-black text-white py-16 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Ready to Start Trading?
+    </h2>
+    <p class="text-gray-200 mb-6">
+        Contact us today and grow your investments with confidence.
+    </p>
+    <a href="/contact/"
+        class="bg-white text-blue px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+        Contact Us
+    </a>
+</section>
+
+{% endblock %}
