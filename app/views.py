@@ -1,19 +1,29 @@
 from django.shortcuts import render
+from .models import Products
 
 
 
-def Home(request):
-    return render(request, 'home.html')
+def home(request):
+    products = Products.objects.only('id', 'name', 'image').order_by('-id')
+    context = {
+        'products': products
+    }
+    return render(request, 'home.html', context) 
 
-def About(request):
+
+def about(request):
     return render(request, 'about.html')
 
-def Products(request):
-    return render(request, 'products.html')
+def products(request):
+    products = Products.objects.only('id', 'name', 'image').order_by('-id')
+    context = {
+        'products': products
+    }
+    return render(request, 'products.html', context)
 
-def Gallery(request):
+def gallery(request):
     return render(request, 'gallery.html')
 
-def Contact(request):
+def contact(request):
     return render(request, 'contact.html')
 

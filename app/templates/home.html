@@ -185,50 +185,18 @@
 
         <!-- SCROLL CONTAINER -->
         <div class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4">
+            {% for product in products %}
 
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-
-                <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bowl-dark-background_1150-45357.jpg?semt=ais_hybrid&w=740&q=80"
+            <a href="{% url 'products' %}"
+                class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}"
                     class="rounded-xl mb-4 w-full h-40 object-cover">
 
-                <h3 class="font-semibold text-lg text-center">Equity Trading</h3>
-            </div>
+                <h3 class="font-semibold text-lg text-center">{{ product.name }}</h3>
+            </a>
 
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-                <img src="https://t3.ftcdn.net/jpg/01/71/97/94/360_F_171979497_W6Ke2ZCBjOPNPkOuGsgktqSLhzYsQDSn.jpg"
-                    class="rounded-xl mb-4 w-full h-40 object-cover">
-                <h3 class="font-semibold text-lg text-center">Commodity Trading</h3>
-            </div>
+            {% endfor %}
 
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZN/MX/BA/43643152/coconut-500x500.png"
-                    class="rounded-xl mb-4 w-full h-40 object-cover">
-                <h3 class="font-semibold text-lg text-center">Forex Trading</h3>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-                <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bag-dark-background_1150-45358.jpg?semt=ais_hybrid&w=740&q=80"
-                    class="rounded-xl mb-4 w-full h-40 object-cover">
-                <h3 class="font-semibold text-lg text-center">Derivatives</h3>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBypHAEgpEwBr4Wym9LYtSv7Vc8IygJvTjOg&s"
-                    class="rounded-xl mb-4 w-full h-40 object-cover">
-                <h3 class="font-semibold text-lg text-center">Portfolio Management</h3>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="min-w-[220px] bg-gray-50 rounded-2xl p-4 shadow-sm hover:shadow-xl transition snap-start">
-                <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/03/31192046/shutterstock_1268044990-1.jpg"
-                    class="rounded-xl mb-4 w-full h-40 object-cover">
-                <h3 class="font-semibold text-lg text-center">Intraday Trading</h3>
-            </div>
 
         </div>
 

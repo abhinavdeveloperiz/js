@@ -38,97 +38,33 @@
         <!-- GRID -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
-            <!-- PRODUCT CARD -->
-            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
-
-                <div class="overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bowl-dark-background_1150-45357.jpg?semt=ais_hybrid&w=740&q=80"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
-                </div>
-
-                <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Equity Trading</h3>
-                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
-                        Enquire Now →
-                    </a>
-                </div>
-
-            </div>
-
+            {% for product in products %}
             <!-- PRODUCT CARD -->
             <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
                 <div class="overflow-hidden">
-                    <img src="https://t3.ftcdn.net/jpg/01/71/97/94/360_F_171979497_W6Ke2ZCBjOPNPkOuGsgktqSLhzYsQDSn.jpg"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}"
+                        class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Commodity Trading</h3>
+                    <h3 class="text-lg font-semibold mb-3">{{ product.name }}</h3>
                     <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
                         Enquire Now →
                     </a>
                 </div>
             </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
-                <div class="overflow-hidden">
-                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/ZN/MX/BA/43643152/coconut-500x500.png"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Forex Trading</h3>
-                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
-                        Enquire Now →
-                    </a>
-                </div>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
-                <div class="overflow-hidden">
-                    <img src="https://img.freepik.com/free-photo/raw-cashews-nuts-bag-dark-background_1150-45358.jpg?semt=ais_hybrid&w=740&q=80"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Derivatives</h3>
-                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
-                        Enquire Now →
-                    </a>
-                </div>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
-                <div class="overflow-hidden">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBypHAEgpEwBr4Wym9LYtSv7Vc8IygJvTjOg&s"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Portfolio Management</h3>
-                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
-                        Enquire Now →
-                    </a>
-                </div>
-            </div>
-
-            <!-- PRODUCT CARD -->
-            <div class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 overflow-hidden">
-                <div class="overflow-hidden">
-                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/03/31192046/shutterstock_1268044990-1.jpg"
-                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500">
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="text-lg font-semibold mb-3">Intraday Trading</h3>
-                    <a href="/contact/" class="text-green-light font-medium text-sm hover:underline">
-                        Enquire Now →
-                    </a>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
 
     </div>
 </section>
+
+
+
+
+
+
+
 
 
 <!-- ================= CTA ================= -->
